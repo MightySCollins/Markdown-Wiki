@@ -10,6 +10,6 @@ return [
     'password' => 'Password',
     'password_confirmation' => 'Confirm Password',
     'email' => 'Email',
-    'remeber' => 'Remember me',
+    'remember' => 'Remember me',
 
 ];

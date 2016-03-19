@@ -2,28 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Cache;
+use App\Models\Post;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
-        return view('home');
+        $posts = Cache::remember('posts', 100, function() {
+            return Post::take(10)->get();
+        });
+        
+        return view('home', ['posts' => $posts]);
     }
+    
 }

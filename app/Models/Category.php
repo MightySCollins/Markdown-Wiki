@@ -10,7 +10,7 @@ class Category extends Model
     use SoftDeletes;
     
     protected $dates = ['deleted_at'];
-    
+    protected $table = 'categories';
     protected $fillable = [
         'name', 'slug', 'user_id',
     ];
@@ -22,6 +22,6 @@ class Category extends Model
     
     public function user()
     {
-        return $this->hasOne('App\Models\User');
+        return $this->belongsTo('App\Models\User');
     }
 }

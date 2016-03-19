@@ -17853,8 +17853,8 @@ return Tether;
 
 window.$ = window.jQuery = require('jquery');
 window.Tether = require('tether');
-require('bootstrap');
-var markdown = require("markdown");
+window.boostrap = require('bootstrap');
+window.markdown = require("markdown");
 
 // Copyright 2014-2015 Twitter, Inc.
 // Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)

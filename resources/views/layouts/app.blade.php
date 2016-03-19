@@ -38,12 +38,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Another nav item</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">More nav</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Last link</a>
-              </li>
               
               @if (Auth::guest())
                 <li class="nav-item">
@@ -78,5 +72,7 @@
     </footer>
 
     <script src="{{ elixir('js/app.js') }}"></script>
+    @stack('scripts')
+    
   </body>
 </html>
