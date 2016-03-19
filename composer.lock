@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "87d124f34bd24d0e5fc56b1946e2239a",
-    "content-hash": "1fa9ae31ada5cc5c17786bd9cbf534f3",
+    "hash": "27049dd2c9f62c7d2239a074b7b0dfd5",
+    "content-hash": "e03bb377f47414b0adaf2229b54a24d3",
     "packages": [
         {
             "name": "alt-three/emoji",
@@ -2253,51 +2253,6 @@
                 "dump"
             ],
             "time": "2016-02-13 09:23:44"
-        },
-        {
-            "name": "vi-kon/laravel-diff",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vi-kon/laravel-diff.git",
-                "reference": "88c78fcfa0eb4ef2448a818bfcd6d21471cdb30c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vi-kon/laravel-diff/zipball/88c78fcfa0eb4ef2448a818bfcd6d21471cdb30c",
-                "reference": "88c78fcfa0eb4ef2448a818bfcd6d21471cdb30c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "ViKon\\Diff\\": "src/"
-                },
-                "psr-4": {
-                    "ViKon\\Diff\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kovács Vince",
-                    "email": "vincekovacs@hotmail.com"
-                }
-            ],
-            "homepage": "https://github.com/vi-kon/laravel-diff",
-            "keywords": [
-                "compare",
-                "diff",
-                "laravel"
-            ],
-            "time": "2015-03-02 11:58:02"
         },
         {
             "name": "vlucas/phpdotenv",
