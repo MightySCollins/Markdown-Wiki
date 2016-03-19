@@ -39,7 +39,7 @@ $factory->define(App\Models\Edit::class, function (Faker\Generator $faker) {
     return [
         'post_id' => $faker->numberBetween(0, 20),
         'user_id' => $faker->numberBetween(0, 20),
-        'content' => implode("\n", $faker->paragraphs),
+        'content' => implode("/n", $faker->paragraphs),
     ];
 });
 
