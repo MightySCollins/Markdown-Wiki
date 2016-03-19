@@ -155,6 +155,13 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        /*
+         * 3rd Party Providers...
+         */
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+        AltThree\Emoji\EmojiServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -201,7 +208,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        
+        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
